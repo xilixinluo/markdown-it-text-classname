@@ -44,7 +44,7 @@ function color(state, silent) {
 function renderDefault(tokens, idx, _options, env, self) {
     var token = tokens[idx];
     var attrs = getAttrs(token.attrs);
-    return `<span classname="${attrs.classname}">${attrs.content}</span>`;
+    return `<span class="${attrs.classname}">${attrs.content}</span>`;
 }
 
 module.exports = function plugin(md, name, options) {
